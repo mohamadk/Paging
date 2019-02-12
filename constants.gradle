@@ -1,0 +1,18 @@
+
+project.ext{
+    buildToolsVersion="28.0.3"
+    compileSdkVersion=28
+    minSdkVersion=14
+    targetSdkVersion=28
+
+    lifecycle = "1.1.1"
+    middleman= "1.0.1"
+
+    paging = "1.0.1"
+    koin_version = '1.0.2'
+
+    retrofit = "2.4.0"
+    okhttp_logging_interceptor = "3.9.0"
+    room = "1.1.1"
+    glide = "4.8.0"
+}

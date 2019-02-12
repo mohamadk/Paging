@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+       xmlns:tools="http://schemas.android.com/tools"
+       xmlns:app="http://schemas.android.com/apk/res-auto"
+       tools:parentTag="com.google.android.material.card.MaterialCardView"
+       android:orientation="vertical"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+
+        >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:padding="8dp"
+            android:layout_height="match_parent"
+            >
+
+        <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="0dp"
+                android:gravity="start"
+                android:layout_height="wrap_content"
+                tools:text="Mr. Purple"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+                android:lines="1"
+                android:ellipsize="end"
+
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/iv_categoryLogo"
+                app:layout_constraintRight_toLeftOf="@id/iv_categoryLogo"
+                app:layout_constraintEnd_toStartOf="@id/iv_categoryLogo"
+                />
+
+        <TextView
+                android:id="@+id/tv_distance"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                tools:text="180m"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+                android:lines="1"
+                android:ellipsize="end"
+
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/iv_categoryLogo"
+                app:layout_constraintEnd_toStartOf="@id/iv_categoryLogo"
+                app:layout_constraintTop_toBottomOf="@+id/tv_title"
+
+                />
+
+        <TextView
+                android:id="@+id/tv_address"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                tools:text="180 Orchard St (btwn Houston and Stanton St), New York, NY 10002, United States"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+                android:lines="1"
+                android:ellipsize="end"
+
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/iv_categoryLogo"
+                app:layout_constraintEnd_toStartOf="@id/iv_categoryLogo"
+                app:layout_constraintTop_toBottomOf="@+id/tv_distance"
+                app:layout_constraintBottom_toBottomOf="@id/iv_categoryLogo"
+                />
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:id="@+id/iv_categoryLogo"
+                tools:background="#9C27B0"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</merge>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Paging Sample</string>
+    <string name="please_turn_on_your_device_gps">Please Turn on your device gps</string>
+    <string name="ok">OK</string>
+    <string name="home_page">Home</string>
+    <string name="detail">Detail</string>
+</resources>

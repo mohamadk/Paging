@@ -1,4 +1,4 @@
-package com.mohamadk.pagingfragment.core.base
+package com.mohamadk.pagingfragment.base
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

@@ -1,6 +1,7 @@
-package com.mohamadk.pagingfragment.core.intractors
+package com.mohamadk.pagingfragment.base.factories
 
 import android.os.Bundle
+import com.mohamadk.pagingfragment.base.BaseDialogFragment
 
 abstract class DialogPageFactory(val fragmentClass: Class<*>) {
     fun build(): BaseDialogFragment {

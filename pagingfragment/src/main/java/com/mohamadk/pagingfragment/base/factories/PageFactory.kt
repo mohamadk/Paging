@@ -1,7 +1,7 @@
-package com.mohamadk.pagingfragment.core.intractors
+package com.mohamadk.pagingfragment.base.factories
 
 import android.os.Bundle
-import com.mohamadk.pagingfragment.core.base.BaseFragment
+import com.mohamadk.pagingfragment.base.BaseFragment
 
 abstract class PageFactory(val fragmentClass: Class<*>) {
 
@@ -18,10 +18,6 @@ abstract class PageFactory(val fragmentClass: Class<*>) {
 
     open fun addToBackStack(): Boolean {
         return true
-    }
-
-    open fun clearPreviousStacks(): Boolean {
-        return false
     }
 
     open fun replace(): Boolean {

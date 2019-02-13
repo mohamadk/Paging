@@ -1,4 +1,4 @@
-package com.mohamadk.pagingfragment.core.base.list
+package com.mohamadk.pagingfragment.base.list
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -11,7 +11,7 @@ import com.mohamadk.middleman.AdapterProvider
 import com.mohamadk.middleman.intractors.RetryListener
 import com.mohamadk.middleman.networkstate.NetworkState
 import com.mohamadk.pagingfragment.R
-import com.mohamadk.pagingfragment.core.base.BaseFragmentOpenerFragment
+import com.mohamadk.pagingfragment.base.BaseFragmentOpenerFragment
 
 abstract class BaseListFragment<LIST_MODEL, VIEW_MODEL : BaseListFragmentViewModel<LIST_MODEL>>
     : BaseFragmentOpenerFragment(), RetryListener {

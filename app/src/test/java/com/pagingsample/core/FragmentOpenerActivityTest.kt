@@ -1,13 +1,16 @@
 package com.pagingsample.core
 
+import com.mohamadk.pagingfragment.BuildConfig
 import com.pagingsample.createNewDialogPage
 import com.pagingsample.createNewPage
 import org.junit.Test
 import org.junit.runner.RunWith
 import org.robolectric.Robolectric
 import org.robolectric.RobolectricTestRunner
+import org.robolectric.annotation.Config
 
 @RunWith(RobolectricTestRunner::class)
+@Config(application = TestApplication::class)
 class FragmentOpenerActivityTest {
 
     @Test

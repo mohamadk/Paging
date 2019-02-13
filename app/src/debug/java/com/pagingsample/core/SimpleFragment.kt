@@ -1,7 +1,7 @@
 package com.pagingsample.core
 
-import com.mohamadk.pagingfragment.core.base.BaseFragment
-import com.mohamadk.pagingfragment.core.intractors.PageFactory
+import com.mohamadk.pagingfragment.base.BaseFragment
+import com.mohamadk.pagingfragment.base.factories.PageFactory
 
 class SimpleFragment : BaseFragment() {
 

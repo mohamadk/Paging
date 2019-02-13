@@ -3,7 +3,7 @@ package com.pagingsample.core
 import android.app.Application
 import android.content.Context
 import androidx.multidex.MultiDex
-import com.facebook.stetho.Stetho
+//import com.facebook.stetho.Stetho
 import com.pagingsample.core.repository.di.storesApiModule
 import com.pagingsample.core.repository.di.storesDbModule
 import com.pagingsample.pages.home.di.homeModules
@@ -19,7 +19,7 @@ class App : Application() {
 
     override fun onCreate() {
         super.onCreate()
-        Stetho.initializeWithDefaults(this)
+//        Stetho.initializeWithDefaults(this)
         startKoin(
             this, listOf(storesApiModule, storesDbModule, viewModelModules, homeModules)
         )

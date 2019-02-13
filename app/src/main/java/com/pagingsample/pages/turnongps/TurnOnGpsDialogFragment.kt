@@ -8,8 +8,8 @@ import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
 import android.provider.Settings.ACTION_LOCATION_SOURCE_SETTINGS
 import android.view.*
-import com.mohamadk.pagingfragment.core.intractors.BaseDialogFragment
-import com.mohamadk.pagingfragment.core.intractors.DialogPageFactory
+import com.mohamadk.pagingfragment.base.BaseDialogFragment
+import com.mohamadk.pagingfragment.base.factories.DialogPageFactory
 import com.pagingsample.R
 import com.pagingsample.core.utils.isGpsOn
 import kotlinx.android.synthetic.main.turn_on_gps_dialog_fragment.*
@@ -24,7 +24,7 @@ class TurnOnGpsDialogFragment : BaseDialogFragment() {
             dismiss()
         }
 
-        val window = dialog!!.window
+        val window = dialog!!.window!!
         val size = Point()
 
         val display = window.windowManager.defaultDisplay

@@ -7,8 +7,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.core.os.bundleOf
-import com.mohamadk.pagingfragment.core.base.BaseFragmentOpenerFragment
-import com.mohamadk.pagingfragment.core.intractors.PageFactory
+import com.mohamadk.pagingfragment.base.BaseFragmentOpenerFragment
+import com.mohamadk.pagingfragment.base.factories.PageFactory
 import com.pagingsample.R
 import com.pagingsample.core.imgloader.GlideApp
 import com.pagingsample.pages.detail.DetailFragment.DetailPage.Companion.PARAM_STORE
@@ -60,6 +60,5 @@ class DetailFragment : BaseFragmentOpenerFragment() {
             const val PARAM_STORE = "st"
         }
     }
-
 
 }

@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import com.google.android.material.card.MaterialCardView
 import com.mohamadk.middleman.Binder
 import com.mohamadk.middleman.intractors.RequireInteractor
-import com.mohamadk.pagingfragment.core.intractors.FragmentOpener
+import com.mohamadk.pagingfragment.intractors.FragmentOpener
 import com.pagingsample.R
 import com.pagingsample.core.imgloader.GlideApp
 import com.pagingsample.pages.detail.DetailFragment

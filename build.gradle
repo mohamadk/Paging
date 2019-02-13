@@ -10,8 +10,9 @@ buildscript {
     dependencies {
         classpath 'com.android.tools.build:gradle:3.3.1'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
-        // NOTE: Do not place your application dependencies here; they belong
-        // in the individual module build.gradle files
+
+        classpath 'com.github.dcendents:android-maven-gradle-plugin:2.1'
+        classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.8.0'
     }
 }
 
@@ -27,4 +28,29 @@ allprojects {
 
 task clean(type: Delete) {
     delete rootProject.buildDir
+}
+
+
+ext {
+    bintrayRepo = 'MiddleMan'
+    bintrayName = 'Paging'
+
+    publishedGroupId = 'com.mohamadk'
+    libraryName = 'paging'
+    artifact = 'paging'
+
+    libraryDescription = 'A library to help handle simple and paging list fragments and interact with activity from fragments and items in Recyclerview'
+
+    siteUrl = 'https://github.com/mohamadk/paging'
+    gitUrl = 'https://github.com/mohamadk/paging.git'
+
+    libraryVersion = '0.1.0'
+
+    developerId = 'mohamad-khaleghy'
+    developerName = 'Mohamad Khaleghy'
+    developerEmail = 'mohamad.khaleghy@gmail.com'
+
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
 }

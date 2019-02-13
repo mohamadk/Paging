@@ -4,7 +4,7 @@ import android.location.Location
 import androidx.paging.LivePagedListBuilder
 import androidx.paging.PagedList
 import com.mohamadk.middleman.model.BaseModel
-import com.mohamadk.pagingfragment.core.Listing
+import com.mohamadk.pagingfragment.Listing
 import com.pagingsample.core.repository.db.StoresDao
 import com.pagingsample.core.repository.settings.SettingsRepo
 import com.pagingsample.core.repository.settings.SettingsRepo.Companion.DISTANCE_OFFSET_FOR_NEW_REQUEST
@@ -43,7 +43,7 @@ class HomeRepositoryImp(
 
         return Listing(
             list = builder.build(),
-            networkState = storesItemKeyedDataSource.networkState,
+            pagingState = storesItemKeyedDataSource.networkState,
             refreshState = storesItemKeyedDataSource.refreshState,
             retry = {
                 storesItemKeyedDataSource.retry()

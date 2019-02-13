@@ -1,9 +1,9 @@
 package com.pagingsample.core.activity
 
 import androidx.appcompat.app.AppCompatActivity
-import com.mohamadk.pagingfragment.core.intractors.DialogPageFactory
-import com.mohamadk.pagingfragment.core.intractors.FragmentOpener
-import com.mohamadk.pagingfragment.core.intractors.PageFactory
+import com.mohamadk.pagingfragment.base.factories.DialogPageFactory
+import com.mohamadk.pagingfragment.intractors.FragmentOpener
+import com.mohamadk.pagingfragment.base.factories.PageFactory
 import com.pagingsample.R
 
 open class FragmentOpenerActivity : AppCompatActivity()

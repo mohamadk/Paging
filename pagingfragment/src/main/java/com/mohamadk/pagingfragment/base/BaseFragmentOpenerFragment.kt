@@ -1,9 +1,9 @@
-package com.mohamadk.pagingfragment.core.base
+package com.mohamadk.pagingfragment.base
 
 import android.content.Context
-import com.mohamadk.pagingfragment.core.intractors.DialogPageFactory
-import com.mohamadk.pagingfragment.core.intractors.FragmentOpener
-import com.mohamadk.pagingfragment.core.intractors.PageFactory
+import com.mohamadk.pagingfragment.base.factories.DialogPageFactory
+import com.mohamadk.pagingfragment.intractors.FragmentOpener
+import com.mohamadk.pagingfragment.base.factories.PageFactory
 
 abstract class BaseFragmentOpenerFragment :
     BaseFragment()

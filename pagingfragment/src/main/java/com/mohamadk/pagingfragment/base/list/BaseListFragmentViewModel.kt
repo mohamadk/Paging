@@ -1,9 +1,9 @@
-package com.mohamadk.pagingfragment.core.base.list
+package com.mohamadk.pagingfragment.base.list
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.Transformations
 import androidx.lifecycle.ViewModel
-import com.mohamadk.pagingfragment.core.Listing
+import com.mohamadk.pagingfragment.Listing
 
 abstract class BaseListFragmentViewModel<LIST_MODEL> : ViewModel() {
 
@@ -14,7 +14,7 @@ abstract class BaseListFragmentViewModel<LIST_MODEL> : ViewModel() {
     }!!
 
     val networkState = Transformations.switchMap(repoResult) {
-        it.networkState
+        it.pagingState
     }!!
 
     val refreshState = Transformations.switchMap(repoResult) {

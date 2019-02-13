@@ -1,7 +1,7 @@
 package com.pagingsample
 
-import com.mohamadk.pagingfragment.core.intractors.DialogPageFactory
-import com.mohamadk.pagingfragment.core.intractors.PageFactory
+import com.mohamadk.pagingfragment.base.factories.DialogPageFactory
+import com.mohamadk.pagingfragment.base.factories.PageFactory
 import com.pagingsample.core.SimpleDialogFragment
 import com.pagingsample.core.SimpleFragment
 

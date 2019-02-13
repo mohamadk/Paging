@@ -5,11 +5,8 @@ import android.annotation.SuppressLint
 import android.annotation.TargetApi
 import android.location.Location
 import android.os.Build
-import android.os.Bundle
-import android.util.Log
-import android.view.View
-import com.mohamadk.pagingfragment.core.base.pagelist.BasePagingFragment
-import com.mohamadk.pagingfragment.core.intractors.PageFactory
+import com.mohamadk.pagingfragment.base.pagelist.BasePagingFragment
+import com.mohamadk.pagingfragment.base.factories.PageFactory
 import com.pagingsample.MainActivity
 import com.pagingsample.R
 import com.pagingsample.core.repository.settings.SettingsRepo.Companion.DISTANCE_OFFSET_FOR_NEW_REQUEST
@@ -85,13 +82,6 @@ class HomeFragment : BasePagingFragment<HomeViewModel>() {
         } else {
             false
         }
-    }
-
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-
-        Log.d("HomeFragment", "onViewCreated : vm=$viewModel")
-
     }
 
     class HomePage : PageFactory(HomeFragment::class.java) {

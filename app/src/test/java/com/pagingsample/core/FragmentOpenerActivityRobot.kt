@@ -1,7 +1,7 @@
 package com.pagingsample.core
 
-import com.mohamadk.pagingfragment.core.intractors.DialogPageFactory
-import com.mohamadk.pagingfragment.core.intractors.PageFactory
+import com.mohamadk.pagingfragment.base.factories.DialogPageFactory
+import com.mohamadk.pagingfragment.base.factories.PageFactory
 import junit.framework.TestCase.assertNotNull
 
 

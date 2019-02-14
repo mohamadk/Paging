@@ -2,6 +2,8 @@
 A library to help handle simple and paging list fragments and interact with activity from fragments and items in 
 Recyclerview
 
+[ ![Download](https://api.bintray.com/packages/mohamad-khaleghy/MiddleMan/Paging/images/download.svg) ](https://bintray.com/mohamad-khaleghy/MiddleMan/Paging/_latestVersion)
+
 ## What's the problem?    
 in applications with a lot of lists there is always a boilerplate code that we have to write for showing a list to the 
 user:
@@ -70,4 +72,15 @@ functions.
 in the example, you can see a full application that works with foursquare APIs.    
 I strongly recommended you to look at the [middleman][1] library if you don't know it already.
 
-[1]: https://medium.com/@MohamadKhaleghy/middleman-e9e26c0fe4a4    
+[1]: https://medium.com/@MohamadKhaleghy/middleman-e9e26c0fe4a4
+
+
+# install
+
+    implementation 'com.mohamadk:paging:$latest_version'
+
+    repositories {
+        maven {
+            url  "https://dl.bintray.com/mohamad-khaleghy/MiddleMan"
+        }
+    }

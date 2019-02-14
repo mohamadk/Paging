@@ -64,10 +64,9 @@ dependencies {
     implementation 'com.google.android.gms:play-services-location:11.6.0'
 
     implementation "com.mohamadk:middleman:$middleman"
-    implementation project(':pagingfragment')
-    testImplementation project(':pagingfragment')
-    implementation 'com.makeramen:roundedimageview:2.3.0'
+    implementation "com.mohamadk:paging:$mohamadkPaging"
 
+    implementation 'com.makeramen:roundedimageview:2.3.0'
     implementation "com.squareup.retrofit2:retrofit:$retrofit"
     implementation "com.squareup.retrofit2:converter-gson:$retrofit"
     implementation "com.squareup.retrofit2:adapter-rxjava2:$retrofit"

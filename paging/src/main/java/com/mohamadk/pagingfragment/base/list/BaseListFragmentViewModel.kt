@@ -7,21 +7,21 @@ import com.mohamadk.pagingfragment.Listing
 
 abstract class BaseListFragmentViewModel<LIST_MODEL> : ViewModel() {
 
-    val repoResult = MutableLiveData<Listing<LIST_MODEL>>()
+    open val repoResult = MutableLiveData<Listing<LIST_MODEL>>()
 
-    val items = Transformations.switchMap(repoResult) {
+    open val items = Transformations.switchMap(repoResult) {
         it.list
     }!!
 
-    val networkState = Transformations.switchMap(repoResult) {
+    open val networkState = Transformations.switchMap(repoResult) {
         it.pagingState
     }!!
 
-    val refreshState = Transformations.switchMap(repoResult) {
+    open val refreshState = Transformations.switchMap(repoResult) {
         it.refreshState
     }!!
 
-    fun retry(vararg args: Any) {
+    open fun retry(vararg args: Any) {
         getListingPage(*args).retry()
     }
 
@@ -29,7 +29,9 @@ abstract class BaseListFragmentViewModel<LIST_MODEL> : ViewModel() {
         repoResult.postValue(getListingPage(*args))
     }
 
-    abstract fun getListingPage(vararg args: Any): Listing<LIST_MODEL>
-
+    open fun getListingPage(vararg args: Any): Listing<LIST_MODEL> {
+        //this never going to happen
+        return null as Listing<LIST_MODEL>
+    }
 
 }

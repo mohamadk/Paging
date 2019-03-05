@@ -3,7 +3,7 @@ package com.mohamadk.pagingfragment
 import androidx.lifecycle.LiveData
 import com.mohamadk.middleman.networkstate.NetworkState
 
-data class Listing<T>(
+open class Listing<T>(
     val list: LiveData<T>? = null,
     //this value represent paging state "Recyclerview loading state"
     val pagingState: LiveData<NetworkState>,

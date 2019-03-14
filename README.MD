@@ -84,3 +84,10 @@ I strongly recommended you to look at the [middleman][1] library if you don't kn
             url  "https://dl.bintray.com/mohamad-khaleghy/MiddleMan"
         }
     }
+
+
+# Sample app
+In sample you can find an application that get places near user location by FourSquare api
+
+![home](/screenshots/home.png)
+![detail](/screenshots/detail.png)

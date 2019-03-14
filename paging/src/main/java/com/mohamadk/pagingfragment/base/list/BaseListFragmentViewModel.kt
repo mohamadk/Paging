@@ -13,7 +13,7 @@ abstract class BaseListFragmentViewModel<LIST_MODEL> : ViewModel() {
         it.list
     }!!
 
-    open val networkState = Transformations.switchMap(repoResult) {
+    open val pagingState = Transformations.switchMap(repoResult) {
         it.pagingState
     }!!
 

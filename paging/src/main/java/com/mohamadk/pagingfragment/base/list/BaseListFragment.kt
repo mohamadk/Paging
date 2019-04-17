@@ -66,9 +66,7 @@ abstract class BaseListFragment<LIST_MODEL, VIEW_MODEL : BaseListFragmentViewMod
                 setRefreshState(it)
             })
 
-            pagingState.observe(this@BaseListFragment, Observer {
-                setNetworkState(it)
-            })
+
 
 
         }

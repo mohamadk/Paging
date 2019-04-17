@@ -13,10 +13,6 @@ abstract class BaseListFragmentViewModel<LIST_MODEL> : ViewModel() {
         it.list
     }!!
 
-    open val pagingState = Transformations.switchMap(repoResult) {
-        it.pagingState
-    }!!
-
     open val refreshState = Transformations.switchMap(repoResult) {
         it.refreshState
     }!!

@@ -8,7 +8,8 @@ import com.pagingsample.core.repository.di.storesApiModule
 import com.pagingsample.core.repository.di.storesDbModule
 import com.pagingsample.pages.home.di.homeModules
 import com.pagingsample.pages.viewModelModules
-import org.koin.android.ext.android.startKoin
+import org.koin.core.context.startKoin
+
 
 class App : Application() {
 
@@ -20,9 +21,10 @@ class App : Application() {
     override fun onCreate() {
         super.onCreate()
 //        Stetho.initializeWithDefaults(this)
-        startKoin(
-            this, listOf(storesApiModule, storesDbModule, viewModelModules, homeModules)
-        )
+
+        startKoin{
+            modules(storesApiModule, storesDbModule, viewModelModules, homeModules)
+        }
 
     }
 

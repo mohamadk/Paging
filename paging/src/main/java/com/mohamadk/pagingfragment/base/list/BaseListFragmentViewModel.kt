@@ -18,7 +18,7 @@ abstract class BaseListFragmentViewModel<LIST_MODEL> : ViewModel() {
     }!!
 
     open fun retry(vararg args: Any) {
-        getListingPage(*args).retry()
+        getListingPage(*args).retry!!.invoke()
     }
 
     open fun loadItems(vararg args: Any) {

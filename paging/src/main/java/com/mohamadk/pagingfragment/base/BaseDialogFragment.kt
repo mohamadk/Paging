@@ -1,6 +1,6 @@
 package com.mohamadk.pagingfragment.base
 
-import androidx.appcompat.app.AppCompatDialogFragment
+import androidx.fragment.app.DialogFragment
 
-abstract class BaseDialogFragment : AppCompatDialogFragment() {
+abstract class BaseDialogFragment : DialogFragment() {
 }

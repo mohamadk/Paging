@@ -82,6 +82,7 @@ class HomeFragment : BasePagingFragment<HomeViewModel>() {
         } else {
             false
         }
+
     }
 
     class HomePage : PageFactory(HomeFragment::class.java) {

@@ -54,8 +54,11 @@ abstract class BaseListFragment<LIST_MODEL, VIEW_MODEL : BaseListFragmentViewMod
 
     private fun initAdapter() {
         adapterProvider = provideAdapter()
-        getRecycler(view!!).adapter = adapterProvider.getAdapter()
-        getRecycler(view!!).layoutManager = LinearLayoutManager(context)
+
+        getRecycler(view!!).apply {
+            adapter = adapterProvider.getAdapter()
+            layoutManager = LinearLayoutManager(context)
+        }
 
         viewModel.apply {
             items.observe(this@BaseListFragment, Observer {
@@ -65,9 +68,6 @@ abstract class BaseListFragment<LIST_MODEL, VIEW_MODEL : BaseListFragmentViewMod
             refreshState.observe(this@BaseListFragment, Observer {
                 setRefreshState(it)
             })
-
-
-
 
         }
     }
